@@ -1,7 +1,7 @@
 
 import './App.css';
 import Banner from './components/Banner';
-import { Nav } from './components/Nav';
+import  Nav  from './components/Nav';
 import styled from 'styled-components';
 import Category from './components/Category';
 import Row from './components/Row';
