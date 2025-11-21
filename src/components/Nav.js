@@ -86,11 +86,31 @@ const Input = styled.input`
     position: fixed;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: rgba(0,0,0, 0.582);
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
     color: white; 
-    padding: 5px;
-    border: none;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    width: 300px;
+    transition: all 0.3s ease;
+    
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    &:focus {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.25);
+        border-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.4);
+    }
 `;
 
 const NavWrapper = styled.nav`
